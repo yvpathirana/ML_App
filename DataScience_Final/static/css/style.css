@@ -703,7 +703,7 @@ button {
 /** contact section **/
 
 .contact {
-     margin-top: 90px;
+     margin-top: 0px;
      background: #fff;
 }
 
@@ -731,17 +731,18 @@ button {
 
 .main_form {
      margin-top: 70px;
+     margin-left: 50px;
      font-family: 'Roboto', sans-serif;
      max-width: 553px;
      width: 100%;
-     float: right;
+     float: left;
      padding-left: 15px;
 }
 
 .main_form .contactus {
      border-bottom: #ffffff solid 1px;
      margin-bottom: 20px;
-     width: 100%;
+     width: 108%;
      height: 57px;
      background: transparent;
      color: #ffffff;

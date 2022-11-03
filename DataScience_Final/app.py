@@ -11,6 +11,9 @@ model = pickle.load(open('DataScience_Final/model(1).pkl', 'rb'))
 def index():
     return render_template('index.html')
 
+@app.route('/calculator')
+def calculator():
+    return render_template('calculator.html')
 
 @app.route('/PREDICT', methods=['GET', 'POST'])
 def predict():
@@ -37,13 +40,13 @@ def predict():
             prediction = model.predict(final_features)
             output = round(prediction[0],2)
             global pred 
-            pred =  "Total power is " + str(output)
+            pred =  "Predicted Total Hydropower Power is " + str(output)
 
         except ValueError:
             return "CHEAK THE INPUTS"
 
    
-    return render_template('index.html',prediction = pred)
+    return render_template('calculator.html',prediction = pred)
 
 
 @app.route('/home')

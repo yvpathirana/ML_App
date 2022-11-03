@@ -31,12 +31,6 @@
    </head>
    <!-- body -->
    <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="{{url_for('static',filename='images/loading.gif')}}" alt="#" /></div>
-      </div>
-      <!-- end loader -->
-      <!-- header -->
       <header>
          <!-- header inner -->
          <div class="header">
@@ -73,135 +67,97 @@
             </div>
          </div>
       </header>
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- banner -->
-      <section class="banner_main">
-         <div id="banner1" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-               <li data-target="#banner1" data-slide-to="0" class="active"></li>
-               <li data-target="#banner1" data-slide-to="1"></li>
-               <li data-target="#banner1" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container">
-                     <div class="carousel-caption">
+      <!-- end testimonial section -->
+      <!-- contact section -->
+      <div id="contact" class="contact">
+         <div class="con_bg">
+            <div class="container-fluid">
+               
+               <div class="row">
+                  <div class="col-md-7">
+                     <form id="request" class="main_form" style="margin-right: 80px" action="{{url_for('predict')}}" method="post">
                         <div class="row">
-                           <div class="col-md-7">
-                              <div class="text-bg">
-                                 <h1> <span class="yellow"> ABC</span> <br>Company</h1>
-                                 <p>We specialise in predictions related to renewable energy</p>
-                                 
+                           <div class="col-md-12">
+                              <div class="titlepage">
+                                 <h2>Predict Hydropower</h2>
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- end banner -->
-      <!-- service section -->
-      <div class="service">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2><img src="{{url_for('static',filename='images/heading_icon.png')}}" alt="#"/><span class="yellow">Renewable Energy</span> <br> <span class="appp_l">Weather Variables</span></h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-sm">
-                  <div class="service_box">
-                     <i><img src="{{url_for('static',filename='images/icon2.jpg')}}" alt="#"/></i>
-                     <div class="service_text">
-                        <h3> Temp</h3>
-                        <p> in kelvin(k) </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm">
-                  <div class="service_box">
-                     <i><img src="{{url_for('static',filename='images/icon3.jpg')}}" alt="#"/></i>
-                     <div class="service_text">
-                        <h3> Temp min </h3>
-                        <p>minimum in k</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm">
-                  <div class="service_box">
-                     <i><img src="{{url_for('static',filename='images/icon1.png')}}" alt="#"/></i>
-                     <div class="service_text">
-                        <h3>Temp max</h3>
-                        <p> maximum in k </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-sm">
-                  <div class="service_box border_bottom1">
-                     <i><img src="{{url_for('static',filename='images/icon5.png')}}" alt="#"/></i>
-                     <div class="service_text">
-                        <h3> Pressure </h3>
-                        <p>pressure in hPa</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm">
-                  <div class="service_box border_bottom1">
-                     <i><img src="{{url_for('static',filename='images/icon4.jpg')}}" alt="#"/></i>
-                     <div class="service_text">
-                        <h3> Wind Speed </h3>
-                        <p>wind speed in m/s</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm">
-                  <div class="service_box border_bottom1">
-                     <i><img src="{{url_for('static',filename='images/icon4.jpg')}}" alt="#"/></i>
-                     <div class="service_text">
-                        <h3> Wind Deg </h3>
-                        <p> Wind direction </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end service section -->
-      <!-- about section -->
-      <div id="about" class="about">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <div class="titlepage">
-                     <h2> <img src="{{url_for('static',filename='images/heading_icon.png')}}" alt="#">About <span class="yellow">Us</span></h2>
-                     <p> We are a set of final year undergraduates from University of Colombo. This initiative is related to a project implementation for a Data Science module </p>
-                  </div>
-               </div>
-               <div class="col-md-10 offset-md-1">
-                  <div class="about_img">
-                     <figure><img src="{{url_for('static',filename='images/about_img.png')}}" alt="#"/></figure>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- about section -->
-      <!-- Our  project section -->
-      <!-- end Our project section -->
-      <!-- testimonial section -->
+                        <div>
 
-      
+                        <div class="row">
+
+                          
+                           <div class="col-sm ">
+                              <input class="contactus" placeholder="Month" type="type" name="Month"> 
+                           </div>
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="hour" type="type" name="hour"> 
+                           </div>
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="wind_deg" type="type" name="wind_deg">                          
+                           </div>
+                        </div>
+
+                        <div class="row">
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 1 hour before" type="type" name="Total_Power_lag1">
+                           </div>
+                           <div class="col-sm ">
+                              <input class="contactus" placeholder="Power Generated 2 hours before" type="type" name="Total_Power_lag2">
+                           </div>
+                        </div>
+
+                        <div class="row">
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 3 hours before" type="type" name="Total_Power_lag3">
+                           </div>
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 4 hours before" type="type" name="Total_Power_lag4">                          
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 5 hours before" type="type" name="Total_Power_lag5">
+                           </div>  
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 6 hours before" type="type" name="Total_Power_lag6">
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 7 hours before" type="type" name="Total_Power_lag7"> 
+                           </div>
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 8 hours before" type="type" name="Total_Power_lag8">                          
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 9 hours before" type="type" name="Total_Power_lag9">
+                           </div>
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 10 hours before" type="type" name="Total_Power_lag10">
+                           </div>
+                        </div>
+                     </div>
+                        <div class="row">
+                           <div class="col-sm">
+                              <button class="send_btn" type="submit">Predict</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+
+                  <div class="col-md-5" style="float: left; margin-top:100px;">
+                        <h1 style="color: white;">{{prediction}}</h1>  
+                  </div>
+                  
+               </div>
+
+            </div>
+         </div>
       </div>
-      <!-- end testimonial section -->
-      <!-- contact section -->
-     
       <!-- end contact section -->
       <!--  footer -->
       <footer>
