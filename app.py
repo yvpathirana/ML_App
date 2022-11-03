@@ -5,7 +5,7 @@ from flask import Flask, render_template, request
 from sklearn.linear_model import LinearRegression
 
 app = Flask(__name__)
-model = pickle.load(open('DataScience_Final/model(1).pkl', 'rb'))
+model = pickle.load(open('model(1).pkl', 'rb'))
 
 @app.route('/')
 def index():
