@@ -1,1 +1,1 @@
-web: gunicorn DataScience_Final/app:app 
+web: gunicorn app:app 
