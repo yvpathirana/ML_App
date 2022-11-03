@@ -1,0 +1,17 @@
+go to file path
+python -m venv env_name
+virtualenv env_flask
+
+env_flask\Scripts\activate 
+
+(if cannot activate) "(cannot be loaded because running scripts is disabled on this system. For more information, see
+about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1)"
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+Get-ExecutionPolicy -List
+
+then run again
+env_flask\Scripts\activate 
+
+then install libarys

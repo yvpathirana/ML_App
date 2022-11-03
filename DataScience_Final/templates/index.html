@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>eoc</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{{url_for('static',filename='css/responsive.css')}}">
+      <!-- fevicon -->
+      <link rel="icon" href="{{url_for('static',filename='images/fevicon.png')}}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{{url_for('static',filename='css/jquery.mCustomScrollbar.min.css')}}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="{{url_for('static',filename='css/awesome.css')}}">
+      <link rel="stylesheet" href="{{url_for('static',filename='css/min.css')}}" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{{url_for('static',filename='images/loading.gif')}}" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                     <div class="full">
+                        <div class="logo">
+                           <a href="{{url_for('home')}}"><img src="{{url_for('static',filename='images/logo.png')}}" alt="#" /></a>
+                        </div>
+                       
+                     </div>
+                  </div>
+                  <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="{{url_for('home')}}">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="{{url_for('about')}}">About</a>
+                              </li>
+                           
+                           </ul>
+                        </div>
+                     </nav>
+                  
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#banner1" data-slide-to="0" class="active"></li>
+               <li data-target="#banner1" data-slide-to="1"></li>
+               <li data-target="#banner1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-7">
+                              <div class="text-bg">
+                                 <h1> <span class="yellow"> ABC</span> <br>Company</h1>
+                                 <p>We specialise in predictions related to renewable energy</p>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- service section -->
+      <div class="service">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2><img src="{{url_for('static',filename='images/heading_icon.png')}}" alt="#"/><span class="yellow">Renewable Energy</span> <br> <span class="appp_l">Weather Variables</span></h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm">
+                  <div class="service_box">
+                     <i><img src="{{url_for('static',filename='images/icon2.jpg')}}" alt="#"/></i>
+                     <div class="service_text">
+                        <h3> Temp</h3>
+                        <p> in kelvin(k) </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm">
+                  <div class="service_box">
+                     <i><img src="{{url_for('static',filename='images/icon3.jpg')}}" alt="#"/></i>
+                     <div class="service_text">
+                        <h3> Temp min </h3>
+                        <p>minimum in k</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm">
+                  <div class="service_box">
+                     <i><img src="{{url_for('static',filename='images/icon1.png')}}" alt="#"/></i>
+                     <div class="service_text">
+                        <h3>Temp max</h3>
+                        <p> maximum in k </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm">
+                  <div class="service_box border_bottom1">
+                     <i><img src="{{url_for('static',filename='images/icon5.png')}}" alt="#"/></i>
+                     <div class="service_text">
+                        <h3> Pressure </h3>
+                        <p>pressure in hPa</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm">
+                  <div class="service_box border_bottom1">
+                     <i><img src="{{url_for('static',filename='images/icon4.jpg')}}" alt="#"/></i>
+                     <div class="service_text">
+                        <h3> Wind Speed </h3>
+                        <p>wind speed in m/s</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm">
+                  <div class="service_box border_bottom1">
+                     <i><img src="{{url_for('static',filename='images/icon4.jpg')}}" alt="#"/></i>
+                     <div class="service_text">
+                        <h3> Wind Deg </h3>
+                        <p> Wind direction </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end service section -->
+      <!-- about section -->
+      <div id="about" class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <h2> <img src="{{url_for('static',filename='images/heading_icon.png')}}" alt="#">About <span class="yellow">Us</span></h2>
+                     <p> We are a set of final year undergraduates from University of Colombo. This initiative is related to a project implementation for a Data Science module </p>
+                  </div>
+               </div>
+               <div class="col-md-10 offset-md-1">
+                  <div class="about_img">
+                     <figure><img src="{{url_for('static',filename='images/about_img.png')}}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section -->
+      <!-- Our  project section -->
+      <!-- end Our project section -->
+      <!-- testimonial section -->
+
+      
+      </div>
+      <!-- end testimonial section -->
+      <!-- contact section -->
+      <div id="contact" class="contact">
+         <div class="con_bg">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-6">
+                     <form id="request" class="main_form" action="{{url_for('predict')}}" method="post">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="titlepage">
+                                 <h2>Predict Hydropower</h2>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+
+                          
+                           <div class="col-sm ">
+                              <input class="contactus" placeholder="Month" type="type" name="Month"> 
+                           </div>
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="hour" type="type" name="hour"> 
+                           </div>
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="wind_deg" type="type" name="wind_deg">                          
+                           </div>
+                        </div>
+
+                        <div class="row">
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 1 hour before" type="type" name="Total_Power_lag1">
+                           </div>
+                           <div class="col-sm ">
+                              <input class="contactus" placeholder="Power Generated 2 hours before" type="type" name="Total_Power_lag2">
+                           </div>
+                        </div>
+
+                        <div class="row">
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 3 hours before" type="type" name="Total_Power_lag3">
+                           </div>
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 4 hours before" type="type" name="Total_Power_lag4">                          
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 5 hours before" type="type" name="Total_Power_lag5">
+                           </div>  
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 6 hours before" type="type" name="Total_Power_lag6">
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 7 hours before" type="type" name="Total_Power_lag7"> 
+                           </div>
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 8 hours before" type="type" name="Total_Power_lag8">                          
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 9 hours before" type="type" name="Total_Power_lag9">
+                           </div>
+                           <div class="col-sm">
+                              <input class="contactus" placeholder="Power Generated 10 hours before" type="type" name="Total_Power_lag10">
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm">
+                              <button class="send_btn" type="submit">Predict</button>
+                           </div><h1>{{prediction}}</h1>
+                          
+                           
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact section -->
+      <!--  footer -->
+      <footer>
+         
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+      <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+      <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+      <script src="{{url_for('static',filename='js/jquery-3.0.0.min.js')}}"></script>
+      <!-- sidebar -->
+      <script src="{{url_for('static',filename='js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+      <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidepanel").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidepanel").style.width = "0";
+         }
+      </script>
+      <script>
+         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+         // Australia.
+         function initMap() {
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 11,
+             center: {lat: 40.645037, lng: -73.880224},
+             });
+         
+         var image = 'images/maps-and-flags.png';
+         var beachMarker = new google.maps.Marker({
+             position: {lat: 40.645037, lng: -73.880224},
+             map: map,
+             icon: image
+           });
+         }
+      </script>
+      <!-- google map js -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+      <!-- end google map js --> 
+   </body>
+</html>
+
